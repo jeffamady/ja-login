@@ -1,0 +1,9 @@
+body, #root{
+    height: 100vh;
+    background-image: linear-gradient(359deg, #F2EEB3, #68788C);
+
+}
+
+#root {
+    display: grid;
+}
