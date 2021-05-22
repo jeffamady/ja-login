@@ -1,7 +1,8 @@
 body {
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     font-size: 1.1rem;
+    position: relative;
 }
 header {
     background-image: linear-gradient(359deg, #F2EEB3, #F2E205);
@@ -10,7 +11,7 @@ header {
 
 #root{
     display: grid;
-    height: 82vh;
+    height: 90%;
     background-image: linear-gradient(190deg, #f2eeb3, #68788C);
     width: 100%;
 }
@@ -18,9 +19,9 @@ header {
 .fContainer {
     display: grid;
     width: 50%;
-    position: absolute;
+    position: relative;
     left: 25%;
-    top: 25%;
+    top: 10%;
 }
 
 .sContainer {
@@ -33,7 +34,7 @@ header {
 }
 
 footer {
-    height: 11vh;
+    height: 5.5rem;
     background-color: #68788C;
     color: #2C3C77;
     display: grid;
@@ -94,13 +95,62 @@ footer button {
 @media (min-width: 530px) {
     .fContainer {
         width: 40%;
-    
+
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .in, .gh, .ig {
+        margin-right: 3rem;
     }
 
     @media (min-width: 700px) {
         .fContainer {
             width:30%;
-        
+            left: 10%;
+
         }
+        .social {
+            justify-content: center;
+        }
+
+        .social i {
+            margin-left: 1rem;
+        }
+
+        @media (min-width: 950px) {
+            .fContainer {
+                width:16%;
+                left: 5%;
+
+            }
+
+            footer {
+                grid-template: 1rem 1fr 1rem / repeat(12, 1fr);
+            }
+
+            .social {
+                grid-area: 2 / 2 / 3 / span 4;
+            }
+
+            .ja {
+                grid-area: 2 / span 4 / 3 / 12;
+                font-size: 0.9rem;
+            }
+
+            @media (min-width: 1700px) {
+                .fContainer {
+                    width:13%;
+                    left: 5%;
+
+                }
+
+                footer {
+                    height: 7rem;
+                }
+              }
+          }
       }
   }
