@@ -1,9 +1,106 @@
-body, #root{
-    height: 100vh;
-    background-image: linear-gradient(359deg, #F2EEB3, #68788C);
+body {
+    height: 100%;
+    width: 100vw;
+    font-size: 1.1rem;
+}
+header {
+    background-image: linear-gradient(359deg, #F2EEB3, #F2E205);
 
 }
 
-#root {
+#root{
+    display: grid;
+    height: 82vh;
+    background-image: linear-gradient(190deg, #f2eeb3, #68788C);
+    width: 100%;
+}
+
+.fContainer {
+    display: grid;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.sContainer {
     display: grid;
 }
+
+.btn-login {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    height: 11vh;
+    background-color: #68788C;
+    color: #2C3C77;
+    display: grid;
+    grid-template: 1rem 1fr 1.5rem / repeat(6, 1fr);
+}
+
+footer a {
+    text-decoration: none;
+    color: #2C3C77;
+    display: flex;
+}
+
+footer button {
+    border-radius: 0;
+    ;
+    border: none;
+    background-color: transparent;
+    color: #2C3C77;
+
+
+}
+.fa-heart {
+    color: #D94C1A;
+}
+ .social {
+     font-size: 2.3rem;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+
+     grid-area: 2 / 2 / 3 / span 4;
+ }
+ .social i {
+     align-self: center;
+ }
+
+ /* .code {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+ } */
+
+ .ja {
+     grid-area: 3 / 2 / 4 / span 4;
+     font-size: 0.6rem;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .code {
+     font-size: 0.6rem;
+ }
+
+
+@media (min-width: 530px) {
+    .fContainer {
+        width: 40%;
+    
+    }
+
+    @media (min-width: 700px) {
+        .fContainer {
+            width:30%;
+        
+        }
+      }
+  }

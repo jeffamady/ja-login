@@ -62,9 +62,9 @@ class Login extends Component {
             <div className='fContainer'>
                 <div className='sContainer'>
                     <div className='fGroup'>
-                        <label>Email</label>
                         <br />
                         <input
+                            placeholder= "Email"
                             type='email'
                             className='form-control'
                             name='email'
@@ -73,9 +73,9 @@ class Login extends Component {
                         />
                         <br />
 
-                        <label>Password</label>
                         <br />
                         <input
+                            placeholder="Password"
                             type='password'
                             className='form-control'
                             name='password'
@@ -85,7 +85,7 @@ class Login extends Component {
                         />
                         <br />
 
-                        <button className='btn btn-primary ' onClick={()=> this.iniciarSesion()} >Log in</button>
+                        <button className='btn btn-primary btn-login ' onClick={()=> this.iniciarSesion()} >Log in</button>
                         <p>Don't have an account? <a href='./Signup'>Sign Up Free</a></p>
                     </div>
                 </div>

@@ -47,12 +47,13 @@ export const Signup =()=>{
     }
 
     return(
-        <div className='containerPrincipal'>
-            <div className='containerSecundario'>
-                <div className='form-group'>
-                <label>Firstname</label>
+        <div className='fContainer'>
+            <div className='sContainer'>
+                <div className='fGroup'>
+                
                     <br />
                     <input
+                        placeholder="Firstname"
                         type='text'
                         className='form-control'
                         name='firstname'
@@ -62,9 +63,10 @@ export const Signup =()=>{
                     />
                     <br />
 
-                    <label>Lastname</label>
+                    
                     <br />
                     <input
+                        placeholder="Lastname"
                         type='text'
                         className='form-control'
                         name='lastname'
@@ -74,9 +76,10 @@ export const Signup =()=>{
                     />
                     <br />
 
-                    <label>Username</label>
+                    
                     <br />
                     <input
+                        placeholder="Username"
                         type='text'
                         className='form-control'
                         name='username'
@@ -85,10 +88,9 @@ export const Signup =()=>{
                         }}
                     />
                     <br />
-
-                    <label>Email</label>
                     <br />
                     <input
+                        placeholder="Email"
                         type='email'
                         className='form-control'
                         name='email'
@@ -98,9 +100,10 @@ export const Signup =()=>{
                     />
                     <br />
 
-                    <label>Password</label>
+                    
                     <br />
                     <input
+                        placeholder="Password"
                         type='password'
                         className='form-control'
                         name='password'
@@ -112,7 +115,7 @@ export const Signup =()=>{
                     <br />
 
                     <button
-                        className='btn btn-primary '
+                        className='btn btn-primary btn-login '
                         onClick={addUser}
                     >
                         Sign up Free
