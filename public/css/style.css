@@ -81,7 +81,7 @@ footer button {
 
  .ja {
      grid-area: 3 / 2 / 4 / span 4;
-     font-size: 0.6rem;
+     font-size: 0.5rem;
      display: inline-flex;
      justify-content: center;
      align-items: center;
@@ -136,7 +136,7 @@ footer button {
             }
 
             .ja {
-                grid-area: 2 / span 4 / 3 / 12;
+                grid-area: 2 / span 5 / 3 / 12;
                 font-size: 0.9rem;
             }
 
