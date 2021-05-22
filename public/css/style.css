@@ -22,14 +22,17 @@ header {
 .fContainer {
     display: grid;
     width: 50%;
+    height: 70%;
     position: relative;
     left: 25%;
-    top: 10%;
+    top: 3%;
 }
 
 .sContainer {
     display: grid;
 }
+
+
 
 .btn-login {
     width: 100%;
@@ -37,7 +40,7 @@ header {
 }
 
 footer {
-    height: 12%;
+    height: 6rem;
     background-color: #68788C;
     color: #2C3C77;
     display: grid;
@@ -75,13 +78,6 @@ footer button {
      align-self: center;
  }
 
- /* .code {
-    grid-area: 3 / 2 / 4 / 3;
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
- } */
-
  .ja {
      grid-area: 3 / 2 / 4 / span 4;
      font-size: 0.5rem;
@@ -93,6 +89,8 @@ footer button {
  .code {
      font-size: 0.6rem;
  }
+
+
 
 
 @media (min-width: 530px) {
@@ -109,6 +107,18 @@ footer button {
         margin-right: 3rem;
     }
 
+    @media (min-height: 1000) {
+
+
+
+        footer {
+            height: 50%;
+        }
+
+    }
+
+
+
     @media (min-width: 700px) {
         .fContainer {
             width:30%;
@@ -122,6 +132,15 @@ footer button {
         .social i {
             margin-left: 1rem;
         }
+
+        @media (min-height: 1200) {
+
+            footer {
+                height: 50%;
+            }
+
+        }
+
 
         @media (min-width: 950px) {
             .fContainer {
